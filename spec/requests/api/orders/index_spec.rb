@@ -1,11 +1,10 @@
 RSpec.describe "GET /api/products", type: :request do
     let!(:product) {create_list(:product, 3)}
+
 describe 'successfully' do
     before do
         get '/api/products'
     end
-
-    subject { response }
 
     it 'is expected to respond with status code 200 ' do
         expect(subject.status). to eq 200
