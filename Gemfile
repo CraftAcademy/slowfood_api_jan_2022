@@ -4,7 +4,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.5.1'
+ruby '3.0.0'
 
 gem 'bootsnap', '>= 1.2', require: false
 gem 'devise_token_auth', '~> 1.2'
@@ -17,11 +17,11 @@ gem 'rails', '~> 6.0.2'
 group :development, :test do
   gem 'coveralls', require: false
   gem 'factory_bot_rails'
-  gem 'faker', '~> 2.19'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :development do
